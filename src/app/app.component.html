@@ -1,0 +1,35 @@
+<p>
+  <mat-toolbar class="toolbar" color="primary">
+    <button
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+    >
+      <p>
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+          <mat-button-toggle
+            value="showgrid"
+            (change)="onValChange($event.value)"
+          >
+            Grid View
+          </mat-button-toggle>
+
+          <mat-button-toggle
+            value="showtable"
+            (change)="onValChange($event.value)"
+          >
+            Tabular View
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+      </p>
+    </button>
+    <span class="name"><b>PROFILES</b></span>
+  </mat-toolbar>
+</p>
+
+<div class="grd" *ngIf="showtable">
+  <app-tabular></app-tabular>
+</div>
+<div class="tbl" *ngIf="showgrid">
+  <app-pro-card></app-pro-card>
+</div>

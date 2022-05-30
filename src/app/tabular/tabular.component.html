@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Profile Card</title>
+    <meta charset="UTF-8" />
+    <meta author="shivalila patil" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <br />
+  <body>
+    <div id="right">
+      <div class="table">
+        <table border="1px">
+          <tr>
+            <th>Name</th>
+            <th>Mail ID</th>
+            <th>Contact No</th>
+            <th>Profile Photo</th>
+          </tr>
+
+          <tr *ngFor="let obj of model">
+            <td>{{ obj.name }}</td>
+            <td>{{ obj.email }}</td>
+            <td>{{ obj.contact }}</td>
+            <td>
+              <img class="image" src="{{ obj.image }}" alt="profile image" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

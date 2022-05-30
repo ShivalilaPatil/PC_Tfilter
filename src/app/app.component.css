@@ -1,0 +1,15 @@
+mat-button-toggle-group {
+  margin-left: 12px;
+  padding: auto;
+  margin: auto;
+}
+.toolbar {
+  padding: auto;
+  height: 70px;
+}
+.name {
+  padding-left: 400px;
+}
+.grd {
+  align-self: center;
+}

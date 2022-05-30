@@ -1,0 +1,13 @@
+mat-toolbar {
+  justify-content: space-between;
+}
+
+.card {
+  padding: 10px;
+  margin-bottom: 16px;
+}
+
+.image {
+  width: 250px;
+  height: 300px;
+}
